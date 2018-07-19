@@ -5,7 +5,7 @@ use Libraries.Robots.Lego.Screen
 use Libraries.Robots.Lego.Sound
 use Libraries.Robots.Lego.Button
 use Libraries.Robots.Lego.Utility
-use Libraries.Compute.Random
+//use Libraries.Compute.Random //not working in brick
 
 //instantiate actions
 Motor motor
@@ -13,16 +13,16 @@ Screen screen
 Sound sound
 Button button
 Utility utility
-Random random
+//Random random
 //set varibles
 
-integer flux=random:RandomIntegerBetween(1, 9)
+//integer flux=random:RandomIntegerBetween(1, 9)
 integer speed=64
 motor:SetSpeed("B",speed) 
 motor:SetSpeed("C",speed)
 integer volume=32 // how loud will the robot be 100 full, 0 silent 
 //================================
-integer  millisecondsoftravel=8000 //this is where the student can change how long the robot moves
+integer  millisecondsoftravel=2000 //this is where the student can change how long the robot moves
 integer millisecondsofturn=100//used to make a 90 degree turn
 //================================
 
